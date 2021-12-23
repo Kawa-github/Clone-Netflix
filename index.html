@@ -13,16 +13,18 @@
 <style>
     body{
         background-color: #000;
-
     }
 
     body.bg-filmes{
-        background-image: url('imgs/background-netflix-red.jpg');
         background-size: cover;
+        background-image:url('imgs/background-netflix-red.jpg');
         background-repeat: no-repeat;
     }
 
-    .cardForm{
+    .degradeFundo{
+    }
+
+    /* .cardForm{
         width: 400px;
         height: 300px;
         margin: 80px;
@@ -30,8 +32,6 @@
         padding: 20px;
         background-color: rgba(0,0,0,.75);
     }
-
-    .cardForm h1{color: #fff;}
 
     .cardForm input{
         border: none;
@@ -42,25 +42,87 @@
         background-color: #333;
         margin: 7px;
     }
-    
+     */
     .cardForm form{
     }
 
     .frmCard{
     }
+
+    header{
+        background:rgb(0, 0, 0);
+        background: linear-gradient(
+            180deg,
+            rgba(0,0,0,0.69) 0%,
+            rgba(0,0,0,0) 100%
+        );
+        /* width: 200px; */
+    }
+    .imgLogo{
+        padding: 20px;
+    }
+
+    #caixa_login{
+        background-color: rgba(0,0,0,0.7);
+        padding: 40px;
+    }
+
+    .frmLogin input{
+        background-color: #333;
+        color: #fff;
+    }
+
+    .btn-login{
+        width: 100%;
+    }
+    .infoCard{
+        color: #b3b3b3;
+    }
+    .infoCard a{text-decoration: none; color:#b3b3b3; float: right;}
+
     </style>
-<body class="bg-filmes">
+<body class="bg-filmes degradeFundo">
     <!-- <img src="imgs/background-netflix-red.jpg" alt="aa"> -->
 
-<div class="d-flex justify-content-center">
-    <div class="card cardForm">
-            <h1>Entrar</h1>
+<!-- <div class="d-flex justify-content-center"> -->
+    <div class="container-fluid">
+        <header class="">
+            <div class="imgLogo">
+                <img src="imgs/netflix-logo-6.png" alt="" width="150px">
+            </div>
+        </header>
+    </div>
+
+    <div id="caixa_login" class="col-4 offset-4">
+        <h1 class="text-white">Entrar</h1>
+        <form action="" class="frmLogin">
+            <br>
+            <input type="email" class="form-control border-0" placeholder="E-mail ou número de telefone" style="box-shadow: none;">
+            <br>
+            <input type="password" class="form-control border-0" placeholder="Senha" style="box-shadow: none;"> 
+            <br>
+            <button class="btn btn-block btn-danger btn-login">Entrar</button>
+        <div class="row">
+            <div class="col infoCard">
+                <label for="lembre"><input type="checkbox" id="lembre">Lembre-se de mim.</label>
+            </div>
+            <div class="col infoCard">
+                <a href="#">Precisa de ajuda?</a>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+    <!-- <div class="card cardForm">
+            <h1 class="text-white">Entrar</h1>
             <form class="frmCard">
                 <input type="email" name=""  size="30" placeholder="E-mail ou número de telefone">
                 <input type="text" size="30" placeholder="Senha">
                 <button class="btn btn-danger col-9">Entrar</button>
             </form>
-    </div>
-</div>
+    </div> -->
+
+<!-- </div> -->
 </body>
 </html>
