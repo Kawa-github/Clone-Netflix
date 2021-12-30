@@ -108,10 +108,8 @@ z-index: 2;
 
 .btn-custom-white:hover{
      opacity: 0.8;
-     /* border: none!important; */
 }
 .btn-custom-translucent:hover{
     color: #fff;
     opacity: 0.8;
-    /* border: none!important; */
 }
